@@ -10,6 +10,7 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://developer.berlios.de/projects/b5i2iso/
 License:	GPL
 Group:		Archiving/Other
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 
 %description 
