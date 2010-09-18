@@ -1,6 +1,6 @@
 %define name	b5i2iso
 %define version	0.2
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name:		%{name}
 Version:	%{version}
@@ -21,8 +21,8 @@ standard ISO-9660 format.
 Usage: b5i2iso image.b5i <image.iso>
 
 %prep
-
 %setup -q
+chmod 644 CHANGELOG
 
 %build
 gcc %optflags ./src/b5i2iso.c -o b5i2iso
